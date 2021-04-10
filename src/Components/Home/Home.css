@@ -1,0 +1,46 @@
+.homeBackground {
+  background: url("../../images/wallpaer.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 1000vh;
+}
+.homeSpinner {
+  margin-left: 500px;
+  margin-top: 80px;
+}
+.conatinerRow {
+  float: left;
+  display: flex;
+  padding-left: 60px;
+}
+.conatinerColumn {
+  padding-top: 50px;
+  text-align: center;
+}
+.cardImage {
+  background-color: #45465c;
+}
+.bookCard {
+  width: 310px;
+}
+.bookCradBody {
+  background: rgb(219, 214, 214);
+}
+.price {
+  font-size: 22px;
+  font-weight: 800;
+}
+@media screen and (max-width: 360px) {
+  .conatinerRow {
+    padding: 0px 18px;
+  }
+  .conatinerColumn {
+    padding-bottom: 20px;
+  }
+  .bookCard {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+}
