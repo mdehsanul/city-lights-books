@@ -14,7 +14,7 @@ const Navbar = () => {
               Home
             </Link>
             <Link to="/orderDetail" className="navBar">
-              Oders
+              Orders
             </Link>
             <Link to="/manageBook" className="navBar">
               Admin
