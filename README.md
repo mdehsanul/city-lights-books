@@ -37,10 +37,10 @@ The login button uses to go to the Login page to create a new account or log in.
 
 7. Admin page -> 
 
-                        * Manage books : a loggedIn admin user can Manage books( can see all the book that are add). Also the admin user can Delete book that is Out Of Stock  
-                        * Add Book: a loggedIn admin user can Add new book information(book image, book name, book author, book price)
-                        * Edit book : Page in under Development....
-                        * Back To Home : this will redirect the user to the Home page.
+       * Manage books : a loggedIn admin user can Manage books( can see all the book that are add). Also the admin user can Delete book that is Out Of Stock  
+       * Add Book: a loggedIn admin user can Add new book information(book image, book name, book author, book price)
+       * Edit book : Page in under Development....
+       * Back To Home : this will redirect the user to the Home page.
 
 8. React Router is used to switch between the pages and the URL is Dynamically generated.
 
