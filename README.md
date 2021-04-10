@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+# website name: 
+City Lights Books
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## live:
+https://city-lights-books-453bd.web.app/
 
-## Available Scripts
+or,
 
-In the project directory, you can run:
+https://city-lights-books-453bd.firebaseapp.com/
 
-### `npm start`
+### Feature:
+1. Navbar -> name of the website, Home, Orders, Admin, Deals, and Login button added. Home, Deals button redirects the user to the Home page.
+The login button uses to go to the Login page to create a new account or log in. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+2. Home page -> On this page, users will get book cards with book information(book name, author, price) for choice their favourite book with Buy Now button. After click on any of the book Buy Now button they will redirect the user to the Login page to create a new account or login. 
+3. Login page -> in this page, user can create a new account or login.
+      
+                 login can be done using:
+                 * Email, password
+                 * facebook
+                 * google.
+                 
+                 create a new account can be done using:
+                 * name
+                 * email
+                 * password
+                 * confirmpassword
+      * you can create an accoount, log in using email, password this will redirect to the checkout page but information not load properly.
+      * Also can login using Facebook but this process show blank page. 
+      * So try to login using google this will work perfectly*** ...
+                 
+4. when a user login the user redirect to the Checkout page.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+5. checkout page -> In this page user get the book information(book name, quantity, price) for checkout. When clicking Checkout button the user will get confirmation alert that the book placed on the order list.
 
-### `npm test`
+6. Order page -> when a user loggedIn user redirect to the order page when click on navbar order button. Here specific(loggedIn) user can see all of his/her order detail. 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+7. Admin page -> 
+         * Manage books : a loggedIn admin user can Manage books( can see all the book that are add). Also the admin user can Delete book that is                           Out Of Stock. 
+         * Add Book: a loggedIn admin user can Add new book information(book image, book name, book author, book price)
+         * Edit book : Page in under Development....
+         * Back To Home : this will redirect the user to the Home page.
 
-### `npm run build`
+8. React Router is used to switch between the pages and the URL is Dynamically generated.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+9. PrivateRoute -> PrivateRoute used to make Orders, Admin button authorized page by giving permission to the users who are already logged in or create a new account.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+otherwise, the user can not enter in the Orders page, , Admin page.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+8. Spinner -> A spinner is added in the Home page for show when the data is loading from server.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Responsiveness:(Home page)
+1. Desktop
+2. mobile devices are
+    * Galaxy Note 3(360 X 640), 100%, Online
+    * Moto G4(360 X 640), 100%, Online
+    * Galaxy S5(360 X 640), 100%, Online
+ 
+### Attention: (this can be happen or not)
+1. Some time it is possible that when Adding an new book the book image will not load properly due to link generate problem from ImgBB then please try again to re-add the book from Add book option in Admin panel or re-enter in the website from first.
