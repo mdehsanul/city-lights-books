@@ -81,6 +81,7 @@ const Login = () => {
       const newUserInformation = { ...user };
       newUserInformation[event.target.name] = event.target.value;
       setUser(newUserInformation);
+      setLoggedInUser(newUserInformation);
     }
   };
 
