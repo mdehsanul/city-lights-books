@@ -14,7 +14,7 @@ const Admin = () => {
   return (
     <div>
       <div className="sidenav">
-        <h1>Pen Square</h1>
+        <h2>City Lights Books</h2>
         <div className="sideNavItem">
           <Link to="/manageBook" className="link">
             <FontAwesomeIcon icon={faThLarge} /> Manage books
