@@ -9,14 +9,7 @@ const Oders = () => {
   useEffect(() => {
     fetch(
       "https://mysterious-island-49555.herokuapp.com/orderDetail?email=" +
-        loggedInUser.email,
-      {
-        method: "GET",
-        headers: {
-          "Content-type": "application/json; charset=UTF-8",
-          authorization: `Bearer ${sessionStorage.getItem("token")}`,
-        },
-      }
+        loggedInUser.email
     )
       .then((res) => res.json())
       .then((data) => {
