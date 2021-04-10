@@ -36,6 +36,7 @@ The login button uses to go to the Login page to create a new account or log in.
 6. Order page -> when a user loggedIn user redirect to the order page when click on navbar order button. Here specific(loggedIn) user can see all of his/her order detail. 
 
 7. Admin page -> 
+
                         * Manage books : a loggedIn admin user can Manage books( can see all the book that are add). Also the admin user can Delete book that is Out Of Stock  
                         * Add Book: a loggedIn admin user can Add new book information(book image, book name, book author, book price)
                         * Edit book : Page in under Development....
